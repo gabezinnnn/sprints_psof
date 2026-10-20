@@ -1,0 +1,17 @@
+{
+  "name": "shark_tank",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "gabezinnnn",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "dev":"node --watch script.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "mysql2": "^3.24.6"
+  }
+}
