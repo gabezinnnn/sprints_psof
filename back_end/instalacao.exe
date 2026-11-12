@@ -1,0 +1,2 @@
+npm -y init
+npm i express cors mysql2 
