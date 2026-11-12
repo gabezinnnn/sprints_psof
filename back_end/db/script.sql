@@ -14,6 +14,10 @@ create table usuario(
 
 create table insumo(
     id_insumo int primary key not null AUTO_INCREMENT,
+<<<<<<< HEAD
+=======
+    unidade_medida varchar(20) not null,
+>>>>>>> 204bc267db615618e7bd7a597ac8563aa1b21879
     nome_insumo varchar(100) not null unique
 );
 
@@ -28,7 +32,10 @@ create table registro(
     id_insumo int not null,
     id_setor int not null,
     quantidade decimal(4, 2) not null,
+<<<<<<< HEAD
     unidade_medida varchar(20) not null,
+=======
+>>>>>>> 204bc267db615618e7bd7a597ac8563aa1b21879
     data datetime not null default(now())
 );
 
@@ -82,8 +89,16 @@ values
     ('Suco');
 
 insert into
+<<<<<<< HEAD
     registro(id_usuario, id_insumo, id_setor, quantidade, unidade_medida)
 values
     (1, 2, 2, 30, 'kg'),
     (2, 3, 3, 20, 'u'),
     (3, 1, 1, 10, 'L');
+=======
+    registro(id_usuario, id_insumo, id_setor, quantidade)
+values
+    (1, 2, 2, 30),
+    (2, 3, 3, 20),
+    (3, 1, 1, 10);
+>>>>>>> 204bc267db615618e7bd7a597ac8563aa1b21879
