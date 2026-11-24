@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Entrar · Quinta Auxiliar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login">
+    <section class="lv">
+      <div class="logo">
+        <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="15" cy="15" r="9" fill="none" stroke="currentColor" stroke-width="3"/>
+          <path d="M20 20l7 7" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        Quinta Auxiliar
+      </div>
+      <div>
+        <h2>Controle de insumos por voz, do estoque ao Detalhado.</h2>
+        <p>Registro de consumo, relatórios e documentos da cozinha escolar em um só lugar.</p>
+      </div>
+      <svg id="wave" viewBox="0 0 448 100" aria-hidden="true"></svg>
+    </section>
+
+    <section class="lf">
+      <form id="loginForm">
+        <div>
+          <h1>Entrar</h1>
+          <p class="sub">Use o usuário informado pela nutricionista.</p>
+        </div>
+        <label>Usuário
+          <input name="u" autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false" required>
+        </label>
+        <label>Senha
+          <input name="p" type="password" autocomplete="current-password" required>
+        </label>
+        <p id="lerr" class="err" role="alert"></p>
+        <button>
+          Entrar
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+        <button type="button" class="lnk" id="forgot">Esqueci a senha</button>
+        <p class="hint">Modo demonstração: usuário nutri ou cozinha1, senha demo123. A autenticação real depende do back-end.</p>
+      </form>
+    </section>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>

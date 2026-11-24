@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Quinta Auxiliar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app" hidden>
+    <div class="shade" data-act="shade"></div>
+    <aside class="side">
+      <div class="logo">
+        <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="15" cy="15" r="9" fill="none" stroke="currentColor" stroke-width="3"/>
+          <path d="M20 20l7 7" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <span class="lbl">Quinta Auxiliar</span>
+      </div>
+      <nav id="nav" aria-label="Principal"></nav>
+    </aside>
+    <main>
+      <header class="top">
+        <div class="tl">
+          <button class="ghost icon" id="menuBtn" data-act="menu" aria-label="Abrir ou fechar o menu" aria-expanded="true">
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+          <span id="unit"></span>
+        </div>
+        <div class="tools">
+          <label>Data de referência <input type="date" id="date"></label>
+          <span id="usr"></span>
+          <button class="ghost" id="out" data-act="out"></button>
+        </div>
+      </header>
+      <section id="view"></section>
+    </main>
+  </div>
+  <div id="toast" role="status"></div>
+  <script src="index.js"></script>
+</body>
+</html>
